@@ -1,5 +1,3 @@
-// import { Strategy } from "workbox-strategies"
-
 if (typeof importScripts === "function") {
   importScripts(
     "https://storage.googleapis.com/workbox-cdn/releases/6.0.0/workbox-sw.js"

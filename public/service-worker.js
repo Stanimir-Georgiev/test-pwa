@@ -95,7 +95,6 @@
 /***/ "9/Ks":
 /***/ (function(module, exports) {
 
-// import { Strategy } from "workbox-strategies"
 if (typeof importScripts === "function") {
   importScripts("https://storage.googleapis.com/workbox-cdn/releases/6.0.0/workbox-sw.js");
   /* global workbox */
@@ -104,7 +103,7 @@ if (typeof importScripts === "function") {
     console.log("Workbox is loaded");
     /* injection point for manifest files.  */
 
-    workbox.precaching.precacheAndRoute([{'revision':'88e80c5154f5cb83f9fcd85757418915','url':'_next/static/aZx7phzgkb9on2p9LplN8/_buildManifest.js'},{'revision':'abee47769bf307639ace4945f9cfd4ff','url':'_next/static/aZx7phzgkb9on2p9LplN8/_ssgManifest.js'},{'revision':'308518fb5c90b92394a94d43f7db8639','url':'_next/static/chunks/f6078781a05fe1bcb0902d23dbbb2662c8d200b3.d390cc7084219f435f84.js'},{'revision':'595196fbd919d2dd07126a7d4c8191bb','url':'_next/static/chunks/framework.4b1beca48388539e3889.js'},{'revision':'0f7228c181f10695b52a298f80404310','url':'_next/static/chunks/main-129764549f7b7dc91316.js'},{'revision':'8ed57c120f761fedc15a7c328b61daed','url':'_next/static/chunks/pages/_app-9e21f66793c2d708caee.js'},{'revision':'d96184c6a014524ea9874db095c2fbd6','url':'_next/static/chunks/pages/_error-de9c1d58d349d4a5a0ae.js'},{'revision':'199419e24c9d9707758f654207828683','url':'_next/static/chunks/pages/index-52acb3a7543e2fd5423d.js'},{'revision':'0fa2c75ddf552a82cdd362f0a74871a7','url':'_next/static/chunks/polyfills-aa54647e89713304033b.js'},{'revision':'8c19f623e8389f11131a054a7e17ff95','url':'_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js'},{'revision':'141213eadb0ecdb8ba0a6bd0f9202683','url':'_next/static/css/6e9ef204d6fd7ac61493.css'},{'revision':'f6c470628b971ba4f634c8b578d8b0de','url':'_next/static/css/c50ddf22b716c7b6b76d.css'}]); // control the uncontrolled client side
+    workbox.precaching.precacheAndRoute([{'revision':'763e99c8f6b15c35910d8d36dcad0815','url':'_next/static/Yh3Dq3Y19gQNPc6RBRaHj/_buildManifest.js'},{'revision':'abee47769bf307639ace4945f9cfd4ff','url':'_next/static/Yh3Dq3Y19gQNPc6RBRaHj/_ssgManifest.js'},{'revision':'308518fb5c90b92394a94d43f7db8639','url':'_next/static/chunks/f6078781a05fe1bcb0902d23dbbb2662c8d200b3.b6d3b08bfce382184205.js'},{'revision':'595196fbd919d2dd07126a7d4c8191bb','url':'_next/static/chunks/framework.4b1beca48388539e3889.js'},{'revision':'0f7228c181f10695b52a298f80404310','url':'_next/static/chunks/main-eae698c3f3c2975bf9c3.js'},{'revision':'8ed57c120f761fedc15a7c328b61daed','url':'_next/static/chunks/pages/_app-4000645db0b486c46d4a.js'},{'revision':'d96184c6a014524ea9874db095c2fbd6','url':'_next/static/chunks/pages/_error-066fefc8258764a7159b.js'},{'revision':'199419e24c9d9707758f654207828683','url':'_next/static/chunks/pages/index-0f95fced3312c06ccb6a.js'},{'revision':'0fa2c75ddf552a82cdd362f0a74871a7','url':'_next/static/chunks/polyfills-aa54647e89713304033b.js'},{'revision':'8c19f623e8389f11131a054a7e17ff95','url':'_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js'},{'revision':'141213eadb0ecdb8ba0a6bd0f9202683','url':'_next/static/css/6e9ef204d6fd7ac61493.css'},{'revision':'f6c470628b971ba4f634c8b578d8b0de','url':'_next/static/css/c50ddf22b716c7b6b76d.css'}]); // control the uncontrolled client side
 
     workbox.core.clientsClaim(); // transit the status from waiting to activate
 
