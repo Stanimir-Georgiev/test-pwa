@@ -2,6 +2,7 @@ if (typeof importScripts === "function") {
   importScripts(
     "https://storage.googleapis.com/workbox-cdn/releases/6.0.0/workbox-sw.js"
   );
+    workbox.setConfig({ debug: true });
 
   /* global workbox */
   if (workbox) {
