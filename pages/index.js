@@ -7,6 +7,9 @@ export default function Home() {
   useEffect(() => {
     const scriptURL = navigator.serviceWorker.scriptURL
     const origin = window.location.origin
+
+    console.log(scriptURL)
+    console.log(origin + "/service-worker-2.js");
     
     if (scriptURL !== origin + "/service-worker-2.js") {
         setHasNewVersion(true)
