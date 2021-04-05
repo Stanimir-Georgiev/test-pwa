@@ -5,15 +5,18 @@ import {useEffect, useState} from "react"
 export default function Home() {
   const [hasNewVersion, setHasNewVersion] = useState(false);
   useEffect(() => {
-    const scriptURL = navigator.serviceWorker?.controller.scriptURL
-    const origin = window.location.origin
+    setTimeout(() => {
+      const scriptURL = navigator.serviceWorker.controller.scriptURL;
+      const origin = window.location.origin;
 
-    console.log(scriptURL, "sourceURL")
-    console.log(origin + "/service-worker-2.js", "origin");
-    
-    if (scriptURL !== origin + "/service-worker-2.js") {
-        setHasNewVersion(true)
-    }
+      console.log(scriptURL, "sourceURL");
+      console.log(origin + "/service-worker-2.js", "origin");
+
+      if (scriptURL !== origin + "/service-worker-2.js") {
+        setHasNewVersion(true);
+      }
+    }, 1000)
+
   }, [])
 
   return (
