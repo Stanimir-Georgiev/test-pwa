@@ -22,6 +22,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       {hasNewVersion && <h1>New version</h1>}
+      <h1>Test</h1>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
