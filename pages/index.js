@@ -8,8 +8,8 @@ export default function Home() {
     const scriptURL = navigator.serviceWorker.scriptURL
     const origin = window.location.origin
 
-    console.log(scriptURL)
-    console.log(origin + "/service-worker-2.js");
+    console.log(scriptURL, "sourceURL")
+    console.log(origin + "/service-worker-2.js", "origin");
     
     if (scriptURL !== origin + "/service-worker-2.js") {
         setHasNewVersion(true)
