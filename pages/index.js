@@ -1,9 +1,21 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import {useEffect, useState} from "react"
 
 export default function Home() {
+  const [hasNewVersion, setHasNewVersion] = useState(false);
+  useEffect(() => {
+    const scriptURL = navigator.serviceWorker.scriptURL
+    const origin = window.location.origin
+    
+    if (scriptURL !== origin + "/service-worker-2.js") {
+        setHasNewVersion(true)
+    }
+  }, [])
+
   return (
     <div className={styles.container}>
+      {hasNewVersion && <h1>New version</h1>}
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />

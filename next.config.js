@@ -7,7 +7,7 @@ module.exports = withOffline({
   dontAutoRegisterSw: true,
   generateSw: false,
   workboxOpts: {
-    swDest: path.join(__dirname, `/public/service-worker.js`),
+    swDest: path.join(__dirname, `/public/service-worker-2.js`),
     swSrc: path.join(__dirname, "sw.js"),
   },
 });
