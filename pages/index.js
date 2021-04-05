@@ -5,7 +5,7 @@ import {useEffect, useState} from "react"
 export default function Home() {
   const [hasNewVersion, setHasNewVersion] = useState(false);
   useEffect(() => {
-    const scriptURL = navigator.serviceWorker.scriptURL
+    const scriptURL = navigator.serviceWorker.controller.scriptURL
     const origin = window.location.origin
 
     console.log(scriptURL, "sourceURL")
