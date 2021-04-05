@@ -14,7 +14,7 @@ export default function Home() {
     if (scriptURL !== origin + "/service-worker-2.js") {
         setHasNewVersion(true)
     }
-  }, [])
+  }, [navigator.serviceWorker])
 
   return (
     <div className={styles.container}>
