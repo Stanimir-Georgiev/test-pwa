@@ -1,0 +1,19 @@
+{
+    "short_name": "Next.js PWA",
+    "name": "Next.js PWA test APP",
+    "description": "It's the Next.js PWA test APP",
+    "icons": [
+      {
+        "src": "logo.png",
+        "type": "image/png",
+        "sizes": "576x209"
+      }
+    ],
+    "dir": "ltr",
+    "lang": "en",
+    "start_url": "../index.html",
+    "orientation": "portrait",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+  }
